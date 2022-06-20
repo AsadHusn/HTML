@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            font-size: x-large;
+            font-family: calibri;
+        }
+        header{
+            position: sticky;
+            margin: 5% 0 0 4%;
+            width: 25%;
+            float: left;
+        }
+        ul{
+            list-style-type: none;
+            padding: 0;
+        }
+        li a{
+            text-decoration: none;
+            color: black;
+        }
+        hr{
+            height: 100vh;
+            display: inline-block;
+        }
+        main{
+            width: 65%;
+            margin: 5% 5% 0 0;
+            float: right;
+            display: block;
+        }
+        @media all and (min-width: 1000px){
+            li a::after{
+                content: " (" attr(data-email) ")";
+                color: gray;
+                font-style: italic;
+            }
+        }
+        @media all and (min-width: 700px) and (max-width: 999px){
+            li a::before{
+                content: "Email: ";
+                font-style: italic;
+                color: gray;
+            }
+            li a{
+                padding-left: 35px;
+                background-image: url("svg/envelope.svg");
+                background-repeat: no-repeat;
+            }
+        }
+        @media all and (min-width: 500px) and (max-width: 699px),
+        (min-width: 1000px){
+            li a{
+                padding-left: 35px;
+                background-image: url("svg/envelope.svg");
+                background-repeat: no-repeat;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Team Apna College</h2>
+        <ul>
+            <li><a data-email="asadhusn007@gmail.com" href="mailto:asadhusn007@outlook.com">Asad Hussain</a></li>
+            <li><a data-email="asadhusn007@gmail.com" href="mailto:asadhusn007@outlook.com">Shaheen Kunwar</a></li>
+            <li><a data-email="asadhusn007@gmail.com" href="mailto:asadhusn007@outlook.com">Maira Saleem</a></li>
+        </ul>
+    </header>
+    <hr>
+    <main>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nostrum sit consectetur laborum explicabo architecto enim, unde nobis impedit minima nihil ratione quasi dolor voluptate in voluptatibus placeat? Minima, natus?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem porro magnam nemo odio pariatur ea, repellendus aperiam et est nostrum. Incidunt aspernatur minima animi illum minus a dolorum expedita omnis?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, aspernatur ratione, numquam dolore voluptatum unde atque laborum quo consectetur doloribus dolorum? Ipsum placeat qui id numquam beatae modi iste quisquam ab asperiores, dolor, error laborum atque repudiandae quas architecto, aperiam porro nemo? Eveniet aut voluptatem aliquid iste quod ullam facere, quidem quia blanditiis atque vero voluptates doloremque temporibus soluta sit repellendus rerum quibusdam hic iure illo laudantium placeat! Non sint, natus dicta itaque enim quibusdam odit maxime est, molestiae corrupti magni quo laudantium unde beatae et sed! Laudantium mollitia vitae aliquam fuga est dolore ad necessitatibus ex molestiae, id minima!</p>
+    </main>
+</body>
+</html>
