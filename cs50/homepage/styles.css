@@ -1,13 +1,17 @@
 *{
     font-family: 'Trebuchet MS';
 }
-h1{
+header{
     position: fixed;
     width: 100%;
     height: 10%;
     padding: 1%;
-    font-weight: bold;
+    display: flex;
     background-color: rgb(62, 78, 78);
+}
+h1{
+    margin: auto;
+    font-weight: bold;
     color: white;
     text-align: center;
 }
