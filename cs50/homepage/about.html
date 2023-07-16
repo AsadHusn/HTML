@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="styles.css" type="text/css" rel="stylesheet">
+    <style>
+        #about{
+            background-color: #05004C;
+        }
+        nav li a:hover:not(#about){
+            background-color: #845EC2;
+            color: white;
+        }
+        .h1{
+            display: inline;
+            font-size: 9vw;
+        }
+        .h2{
+            display: inline;
+            font-size: 8vw;
+        }
+        #logo2{
+            position: absolute;
+            right: 16%;
+            top: 4%;
+            width: 20%;
+            clip-path: circle(50% at 50% 50%);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img id="logo" src="img/logo.jpg">
+        <h1>Asad Hussain</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+                <a href="favorite.html">Favorites</a>
+                <a href="contact.html">Contact</a>
+                <a id="about" href="about.html">About</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <h1 class="h1">Hey!</h1>
+        <br>
+        <h1 class="h2">I am Asad</h1>
+        <img id="logo2" src="img/logo2.jpg">
+        <h1>
+            I am doing cs50 by Harvard. I am making this simple web page assignment for problem set 8.
+        </h1>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

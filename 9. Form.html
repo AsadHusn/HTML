@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form</title>
+</head>
+<body>
+    <form action="" method="" name="" id="" onsubmit="">
+        <!-- required, placeholder, initial-value, readonly, disabled -->
+        First Name:
+        <input type="text" name="first-name" value="Asad" readonly disabled>
+
+        <br>
+
+        <!-- label-for-name, size, maxlength -->
+        <label for="last-name">Last Name: </label>
+        <input type="text" name="first-name" placeholder="Last Name" size="40" required>
+
+        <br>
+
+        <label for="gender">Male</label>
+        <input type="radio" name="gender" value="1">
+        <label for="gender">Female</label>
+        <input type="radio" name="gender" value="2">
+
+        <br>
+
+        <label for="email">Email: </label>
+        <input type="email" name="email" placeholder="abc@email.com">
+        <br>
+        
+        <label for="month">Birthday: </label>
+        <select name="month" id="">
+            <option value="0" disabled selected>Month</option>
+            <option value="1">Jan</option>
+            <option value="2">Feb</option>
+            <option value="3">Mar</option>
+        </select>
+
+        <!-- min and max -->
+        Date of Birth: 
+        <input type="date" name="dob">
+
+        <br>
+
+        Password: <input type="password" name="password">
+        
+        <br>
+
+        I agree <input type="checkbox" name="agree">
+
+        <br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

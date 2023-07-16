@@ -1,0 +1,51 @@
+<!--
+<map name="workmap">
+defines an image map. An image map is an image with clickable areas.
+The areas are defined with one or more <area> tags.
+
+    usemap attribute
+The usemap value starts with a hash tag # followed by the name of the image map,
+and is used to create a relationship between the image and the image map.
+<img src="workplace.jpg" usemap="#workmap">
+-->
+
+<!--
+<area shape="rect" coords="left, top, left, top" href="#">
+The <area> tag defines an area inside an image map
+
+You must define the shape of the clickable area, and you can choose one of these values:
+
+rect - defines a rectangular region
+The coordinates for shape="rect" come in pairs, one for the x-axis and one for the y-axis.
+<area shape="rect" coords="34, 44, 270, 350" href="computer.htm">
+
+circle - defines a circular region
+To add a circle area, first locate the coordinates of the center of the circle:
+Then specify the radius of the circle:
+<area shape="circle" coords="337, 300, 44" href="coffee.htm">
+
+
+poly - defines a polygonal region
+
+default - defines the entire region
+
+
+
+-->
+
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <title>Image</title>
+</head>
+<body>
+    <img src="cs50.png" alt="There is an image." height="" width="" usemap="#cs50">
+
+    <map name="cs50">
+      <area shape="rect" coords="34,44,270,350" alt="Computer" href="#">
+      <area shape="rect" coords="290,172,333,250" alt="Phone" href="#">
+      <area shape="circle" coords="337,300,44" alt="Coffee" href="#">
+    </map>
+
+</body>
+</html>

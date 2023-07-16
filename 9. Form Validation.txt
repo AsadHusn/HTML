@@ -1,0 +1,43 @@
+Form Validation Attributes
+
+value
+readonly
+disabled
+autofocus
+
+required
+(text, search, url, tel, email, password, date pickers, number, checkbox, radio, file)
+
+placeholder
+(text, search, url, tel, email, and password)
+
+size
+(text, search, tel, url, email, and password) (not number)
+
+maxlength
+(not numbers)
+
+min and max
+(number, range, date, datetime-local, month, time and week)
+
+step
+(number, range, date, datetime-local, month, time and week)
+ie. step="3"
+
+multiple
+(file, email)
+
+pattern
+(text, date, search, url, tel, email, and password)
+ie. pattern="[A-Za-z]{3}" (length 3)
+
+height and width
+<input type="image" src="img_submit.gif" alt="Submit" width="48" height="48">
+
+list
+list attribute refers to a <datalist> element
+<input list="list-id">
+
+autocomplete
+autocomplete="on", "off"
+(text, search, url, tel, email, password, datepickers, range, color)

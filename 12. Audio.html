@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <title>Audio</title>
+</head>
+<body>
+    <audio src="cs50.mp3" type="audio/mp3" controls></audio>
+    <br>
+    <button onclick="play()">Play</button>
+    <button onclick="pause()">Pause</button>
+    
+    <script>
+        audio = document.getElementsByTagName('audio')[0]
+        function play(){
+            audio.play()
+        }
+        function pause(){
+            audio.pause()
+        }
+    </script>
+</body>
+</html>

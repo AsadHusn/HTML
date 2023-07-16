@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function changeColor(event){
+                var trigger = event.srcElement;
+                document.getElementById("colorDiv").style.backgroundColor = trigger.innerHTML.toLowerCase();
+                document.getElementById("colorDiv").innerHTML = "Hey " + trigger.innerHTML.toUpperCase();
+            }
+        </script>
+        <style>
+            #colorDiv{
+                margin: auto;
+                font-size: xx-large;
+                padding: 5% 0%;
+                margin: 0% 5%;
+                text-align: center;
+                background-color: aquamarine;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="colorDiv">
+            Change My color!
+        </div>
+        <div style="margin-top: 5%">
+            <button onclick="changeColor(event)">Purple</button>
+            <button onclick="changeColor(event)">Green</button>
+            <button onclick="changeColor(event)">Orange</button>
+        </div>
+    </body>
+</html>
